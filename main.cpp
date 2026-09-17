@@ -69,7 +69,7 @@ int main( int argc, char * argv[] )
 		loan_amount -= principle;
 		cout << loan_amount << endl
 		total_interest += interest_payment;
-		cout <<interest_payment << endl
+		cout <<interest_payment << endl;
 		month++
 
 	}
