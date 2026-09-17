@@ -67,10 +67,10 @@ int main( int argc, char * argv[] )
 	
 	while (loan_amount > 0){
 		loan_amount -= principle;
-		cout << loan_amount << endl
+		cout << loan_amount << endl;
 		total_interest += interest_payment;
 		cout <<interest_payment << endl;
-		month++
+		month++;
 
 	}
 
