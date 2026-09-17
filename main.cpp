@@ -56,6 +56,8 @@ int main( int argc, char * argv[] )
 
 	int month = 0;
 
+	int total_interest = 0;
+
 	cout << endl;
 	// AMORTIZATION TABLE
 	cout << "*****************************************************************\n"
@@ -64,6 +66,11 @@ int main( int argc, char * argv[] )
 	<< "Month\tBalance\t\tPayment\tRate\tInterest\tPrincipal\n"; 
 	
 	while (loan_amount > 0){
+		loan_amount -= principle;
+		cout << loan_amount << endl
+		total_interest += interest_payment;
+		cout <<interest_payment << endl
+		month++
 
 	}
 
