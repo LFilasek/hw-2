@@ -54,7 +54,13 @@ int main( int argc, char * argv[] )
 	// calculate the principle
 	int principle = monthly_payment - interest_payment;
 
-
+	cout << endl;
+	// AMORTIZATION TABLE
+	cout << "*****************************************************************\n"
+	<< "\tAmortization Table\n"
+	<< "*****************************************************************\n"
+	<< "Month\tBalance\t\tPayment\tRate\tInterest\tPrincipal\n"; 
+	
 
 	return 0;
 }
