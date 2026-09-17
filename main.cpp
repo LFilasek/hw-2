@@ -45,5 +45,7 @@ int main( int argc, char * argv[] )
 	monthly_payment = arguments[2];
 	cout << loan_amount << " " << yearly_interest_rate << " " << monthly_payment << endl;
 
+	//test 1
+
 	return 0;
 }
