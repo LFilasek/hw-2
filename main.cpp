@@ -46,6 +46,7 @@ int main( int argc, char * argv[] )
 	cout << loan_amount << " " << yearly_interest_rate << " " << monthly_payment << endl;
 
 	//test 1
+	int monthly_interest = yearly_interest_rate / 12;
 
 	return 0;
 }
