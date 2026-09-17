@@ -45,8 +45,16 @@ int main( int argc, char * argv[] )
 	monthly_payment = arguments[2];
 	cout << loan_amount << " " << yearly_interest_rate << " " << monthly_payment << endl;
 
-	//test 1
+	//get the monthly 
 	int monthly_interest = yearly_interest_rate / 12;
+
+	// interest_payment
+	int interest_payment = (monthly_interest*loan_amount);
+
+	// calculate the principle
+	int principle = monthly_payment - interest_payment;
+
+
 
 	return 0;
 }
