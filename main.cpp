@@ -39,18 +39,7 @@ int main( int argc, char * argv[] )
 			i++;
 		}
 	}
-	if (arguments[0] <= 0){
-		cout << "invalid loan";
-		return -1;
-	}
-	if (arguments[1] < 0 ){
-		cout<< "invalid loan";
-		return -1;
-	}
-	if (arguments[2] <= 0){
-		cout<< "invalid loan";
-		return -1;
-	}
+	
 
 	loan_amount = arguments[0];
 	
