@@ -65,6 +65,10 @@ int main( int argc, char * argv[] )
 	<< "*****************************************************************\n"
 	<< "Month\tBalance\t\tPayment\tRate\tInterest\tPrincipal\n"; 
 	
+	cout.setf(ios::fixed);
+	cout.setf(ios::showpoint);
+	cout.precision(2);
+
 	while (loan_amount > 0){
 		loan_amount -= principle;
 		interest_payment = (Rate*loan_amount)/100;
