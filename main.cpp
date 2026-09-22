@@ -72,6 +72,8 @@ int main( int argc, char * argv[] )
 	cout.setf(ios::showpoint);
 	cout.precision(2);
 
+	cout << "0" << "	" << loan_amount << "		" << "N/A" << "   " << "N/A" << " " << "N/A" << "	" << "N/A" << " " << endl;
+
 	while (loan_amount > 0){
 		if (principle > loan_amount) {
 			principle = loan_amount;
