@@ -49,7 +49,7 @@ int main( int argc, char * argv[] )
 	int Rate = yearly_interest_rate / 12;
 
 	// interest_payment
-	int interest_payment = (monthly_interest*loan_amount);
+	int interest_payment = (Rate*loan_amount);
 
 	// calculate the principle
 	int principle = Rate - interest_payment;
@@ -67,9 +67,8 @@ int main( int argc, char * argv[] )
 	
 	while (loan_amount > 0){
 		loan_amount -= principle;
-		cout << loan_amount << endl;
-		total_interest += interest_payment;
-		cout <<interest_payment << endl;
+		interest_payment = Rate*loan_amount;
+		principle = Rate - interest_payment;
 		month++;
 
 	}
