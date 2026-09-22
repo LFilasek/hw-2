@@ -74,7 +74,7 @@ int main( int argc, char * argv[] )
 		interest_payment = (Rate*loan_amount)/100;
 		principle = monthly_payment - interest_payment;
 		month++;
-		cout << month << "	" << loan_amount << "				" << monthly_payment << "	"  << Rate << "	" << interest_payment << "			" << principle << "	"  << endl;
+		cout << month << "	" << loan_amount << "		" << monthly_payment << " "  << Rate << "	" << interest_payment << "		" << principle << "	"  << endl;
 
 	}
 
