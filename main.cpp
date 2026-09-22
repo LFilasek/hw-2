@@ -70,6 +70,9 @@ int main( int argc, char * argv[] )
 	cout.precision(2);
 
 	while (loan_amount > 0){
+		if (principle > loan_amount) {
+			principle = loan_amount
+		}
 		loan_amount -= principle;
 		interest_payment = (Rate*loan_amount)/100;
 		principle = monthly_payment - interest_payment;
