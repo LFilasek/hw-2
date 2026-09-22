@@ -41,15 +41,15 @@ int main( int argc, char * argv[] )
 	}
 	if (arguments[0] <= 0){
 		cout << "invalid loan";
-		abort();
+		return -1;
 	}
 	if (arguments[1] < 0 ){
 		cout<< "invalid loan";
-		abort();
+		return -1;
 	}
 	if (arguments[2] <= 0){
 		cout<< "invalid loan";
-		abort();
+		return -1;
 	}
 
 	loan_amount = arguments[0];
