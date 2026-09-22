@@ -24,6 +24,9 @@ int main( int argc, char * argv[] )
 
 			try
 			{
+				if (!hasValidCharacters(argv[i])){
+					throw invalid_argument("bad characters");
+				}
 				arguments[i-1] = stod(argv[i]);
 			}
 			catch(const std::invalid_argument&)
