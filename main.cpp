@@ -39,9 +39,23 @@ int main( int argc, char * argv[] )
 			i++;
 		}
 	}
+	if (arguments[0] <= 0){
+		cout << "invalid loan";
+		abort();
+	}
+	if (arguments[1] < 0 ){
+		cout<< "invalid loan";
+		abort();
+	}
+	if (arguments[2] <= 0){
+		cout<< "invalid loan";
+		abort();
+	}
 
 	loan_amount = arguments[0];
+	
 	yearly_interest_rate = arguments[1];
+	
 	monthly_payment = arguments[2];
 	cout << loan_amount << " " << yearly_interest_rate << " " << monthly_payment << endl;
 
