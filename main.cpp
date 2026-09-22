@@ -52,7 +52,7 @@ int main( int argc, char * argv[] )
 	double Rate = yearly_interest_rate / 12;
 
 	// interest_payment
-	double interest_payment = 0;
+	double interest_payment = (Rate*loan_amount)/100;
 
 	// calculate the principle
 	double principle = monthly_payment - interest_payment;
