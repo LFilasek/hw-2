@@ -63,11 +63,11 @@ int main( int argc, char * argv[] )
 	cout << "*****************************************************************\n"
 	<< "\tAmortization Table\n"
 	<< "*****************************************************************\n"
-	<< "Month\tBalance\tPayment\tRate\tInterest\tPrincipal\n"; 
+	<< "Month\tBalance\t\tPayment\tRate\tInterest\tPrincipal\n"; 
 	
 	while (loan_amount > 0){
-		cout << loan_amount << endl;
 		loan_amount -= principle;
+		cout << loan_amount << endl;
 		interest_payment = (Rate*loan_amount)/100;
 		principle = monthly_payment - interest_payment;
 		month++;
