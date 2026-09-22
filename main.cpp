@@ -60,17 +60,17 @@ int main( int argc, char * argv[] )
 	cout << loan_amount << " " << yearly_interest_rate << " " << monthly_payment << endl;
 
 	//get the monthly 
-	int Rate = yearly_interest_rate / 12;
+	double Rate = yearly_interest_rate / 12;
 
 	// interest_payment
-	int interest_payment = (Rate*loan_amount)/100;
+	double interest_payment = (Rate*loan_amount)/100;
 
 	// calculate the principle
-	int principle = monthly_payment - interest_payment;
+	double principle = monthly_payment - interest_payment;
 
 	int month = 0;
 
-	int total_interest = 0;
+	double total_interest = 0;
 
 	cout << endl;
 	// AMORTIZATION TABLE
@@ -79,13 +79,19 @@ int main( int argc, char * argv[] )
 	<< "*****************************************************************\n"
 	<< "Month\tBalance\t\tPayment\tRate\tInterest\tPrincipal\n"; 
 	
+	cout.setf(ios::fixed);
+	cout.setf(ios::showpoint);
+	cout.precision(2);
+
 	while (loan_amount > 0){
+		if (principle > loan_amount) {
+			principle = loan_amount;
+		}
 		loan_amount -= principle;
-		cout << loan_amount << endl;
 		interest_payment = (Rate*loan_amount)/100;
 		principle = monthly_payment - interest_payment;
 		month++;
-		cout << month << endl;
+		cout << month << "	" << loan_amount << "		" << monthly_payment << "   "  << Rate << "	" << interest_payment << "		" << principle << "	"  << endl;
 
 	}
 
