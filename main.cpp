@@ -46,13 +46,13 @@ int main( int argc, char * argv[] )
 	cout << loan_amount << " " << yearly_interest_rate << " " << monthly_payment << endl;
 
 	//get the monthly 
-	int monthly_interest = yearly_interest_rate / 12;
+	int Rate = yearly_interest_rate / 12;
 
 	// interest_payment
 	int interest_payment = (monthly_interest*loan_amount);
 
 	// calculate the principle
-	int principle = monthly_payment - interest_payment;
+	int principle = Rate - interest_payment;
 
 	int month = 0;
 
