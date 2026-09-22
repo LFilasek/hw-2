@@ -66,8 +66,8 @@ int main( int argc, char * argv[] )
 	<< "Month\tBalance\tPayment\tRate\tInterest\tPrincipal\n"; 
 	
 	while (loan_amount > 0){
-		loan_amount -= principle;
 		cout << loan_amount << endl;
+		loan_amount -= principle;
 		interest_payment = (Rate*loan_amount)/100;
 		principle = monthly_payment - interest_payment;
 		month++;
