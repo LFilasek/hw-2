@@ -57,7 +57,7 @@ int main( int argc, char * argv[] )
 	// calculate the principle
 	double principle = monthly_payment - interest_payment;
 
-	int month = 0;
+	int month = 1;
 
 	double total_interest = 0;
 
@@ -77,10 +77,11 @@ int main( int argc, char * argv[] )
 			principle = loan_amount;
 		}
 		loan_amount -= principle;
+		cout << month << "	" << loan_amount << "		" << monthly_payment << "   "  << Rate << "	" << interest_payment << "		" << principle << "	"  << endl;
 		interest_payment = (Rate*loan_amount)/100;
 		principle = monthly_payment - interest_payment;
 		month++;
-		cout << month << "	" << loan_amount << "		" << monthly_payment << "   "  << Rate << "	" << interest_payment << "		" << principle << "	"  << endl;
+		
 
 	}
 
