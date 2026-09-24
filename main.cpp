@@ -43,10 +43,25 @@ int main( int argc, char * argv[] )
 	
 
 	loan_amount = arguments[0];
+
+	if (loan_amount <= 0)
+	{
+		cout << "Invalid loan amount." << endl;
+		return -1;
+	}
 	
 	yearly_interest_rate = arguments[1];
+
+	if (yearly_interest_rate <= 0){
+		cout<< "insufficient information provided"<<endl;
+		return -1;
+	}
 	
 	monthly_payment = arguments[2];
+	if (monthly_payment <= 0){
+		cout<< "insufficient information provided"<<endl;
+		return -1;
+	}
 
 	
 	cout << loan_amount << " " << yearly_interest_rate << " " << monthly_payment << endl;
