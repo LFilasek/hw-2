@@ -25,10 +25,6 @@ int main( int argc, char * argv[] )
 
 			try
 			{
-				if (!isdigit(arguments[i-1])){
-					cout<<"invalid input"<<endl;
-					return -1;
-				}
 				arguments[i-1] = stod(argv[i]);
 			}
 			catch(const std::invalid_argument&)
@@ -44,7 +40,12 @@ int main( int argc, char * argv[] )
 			i++;
 		}
 	}
-	
+	for (int i = 0; i < 4; i++){
+		if(!isdigit(argv[i])){
+			cout<<"invalid input"<<endl;
+			return -1;
+		}
+	}
 
 	loan_amount = arguments[0];
 	
@@ -52,6 +53,8 @@ int main( int argc, char * argv[] )
 	
 	monthly_payment = arguments[2];
 	cout << loan_amount << " " << yearly_interest_rate << " " << monthly_payment << endl;
+
+
 
 	//get the monthly 
 	double Rate = yearly_interest_rate / 12;
