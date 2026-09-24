@@ -70,7 +70,7 @@ int main( int argc, char * argv[] )
 
 // check for unpayable loan
 	if (monthly_payment <= interest_payment){
-		cout<<"impossible to pay loan"<endl;
+		cout<<"impossible to pay loan"<<endl;
 		return -1;
 	}
 
