@@ -24,8 +24,9 @@ int main( int argc, char * argv[] )
 
 			try
 			{
-				if (!hasValidCharacters(argv[i])){
-					throw invalid_argument("bad characters");
+				if (!isnumber(arguments[i-1])){
+					cout<<"invalid input"<<endl;
+					return -1;
 				}
 				arguments[i-1] = stod(argv[i]);
 			}
