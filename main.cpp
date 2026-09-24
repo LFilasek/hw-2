@@ -67,6 +67,13 @@ int main( int argc, char * argv[] )
 	double total_interest = 0;
 
 	cout << endl;
+
+// check for unpayable loan
+	if (monthly_payment <= interest_payment){
+		cout<<"impossible to pay loan"<endl;
+		return -1;
+	}
+
 	// AMORTIZATION TABLE
 	cout << "*****************************************************************\n"
 	<< "\tAmortization Table\n"
