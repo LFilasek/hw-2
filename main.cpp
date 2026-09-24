@@ -99,9 +99,13 @@ int main( int argc, char * argv[] )
 		interest_payment = (Rate*loan_amount)/100;
 		principle = monthly_payment - interest_payment;
 		month++;
+		total_interest += interest_payment;
 		
 
 	}
+
+	cout << "It takes " << month << " months to pay off the loan." << endl;
+	cout << " Total interest paid is: " << total_interest << endl;
 
 	return 0;
 }
