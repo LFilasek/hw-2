@@ -1,4 +1,5 @@
 #include <iostream>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -24,7 +25,7 @@ int main( int argc, char * argv[] )
 
 			try
 			{
-				if (!isnumber(arguments[i-1])){
+				if (!isdigit(arguments[i-1])){
 					cout<<"invalid input"<<endl;
 					return -1;
 				}
