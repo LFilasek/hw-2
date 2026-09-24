@@ -64,7 +64,7 @@ int main( int argc, char * argv[] )
 
 	int month = 1;
 
-	double total_interest = 0 + interest_payment;
+	double total_interest = interest_payment;
 
 	cout << endl;
 
