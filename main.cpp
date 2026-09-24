@@ -101,7 +101,7 @@ int main( int argc, char * argv[] )
 
 	}
 
-	cout << "It takes " << month << " months to pay off the loan." << endl;
+	cout << "It takes " << month - 1 << " months to pay off the loan." << endl;
 	cout << " Total interest paid is: " << total_interest << endl;
 
 	return 0;
