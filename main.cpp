@@ -43,25 +43,12 @@ int main( int argc, char * argv[] )
 	
 
 	loan_amount = arguments[0];
-
-	if (!isdigit(loan_amount)){
-		cout<<"invalid input"<<endl;
-		return -1;
-	}
 	
 	yearly_interest_rate = arguments[1];
-
-	if (!isdigit(yearly_interest_rate)){
-		cout<<"invalid input"<<endl;
-		return -1;
-	}
 	
 	monthly_payment = arguments[2];
 
-	if (!isdigit(monthly_payment)){
-		cout<<"invalid input"<<endl;
-		return -1;
-	}
+	
 	cout << loan_amount << " " << yearly_interest_rate << " " << monthly_payment << endl;
 
 
